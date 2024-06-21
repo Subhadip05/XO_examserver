@@ -1,8 +1,9 @@
-Scripting My XO :-
+<h2>Scripting My XO :-</h2>
+<h3>This is an exam portal project, named <b>XO(ExamON)</b></h3>
+<br>
+<h4>The tech-stack I am using for XO :</h4>
 
-This is an exam portal project, named XO(ExamON).
 
-The tech-stack I am using for XO :
 
    _> Backend Part :-
        -> Java 21,
