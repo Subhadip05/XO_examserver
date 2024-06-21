@@ -4,22 +4,29 @@
 <h4>The tech-stack I am using for XO :</h4>
 
 
+<ul>
+   <li>Backend Part :-</li>
+   <ol>
+      <li>Java 21</li>
+      <li>Spring 4,</li>
+      <li>Spring Boot 3.2.4,</li>
+      <li>IntelliJ IDEA (Backend coding editor software),</li>
+      <li>Postman for API testing.</li>
+   </ol>
+   
+   <li>Database:-</li>
+   <ol>
+      <li>MySQL (Relational database),</li>
+      <li>MySQL workbench to manipulate database Shema.</li>
+   </ol>
 
-   _> Backend Part :-
-       -> Java 21,
-       -> Spring 4,
-       -> Spring Boot 3.2.4,
-       -> IntelliJ IDEA (Backend coding editor software),
-       -> Postman for API testing.
+   <li>Frontend Part :-</li>
+   <ol>
+      <li>Angular 21.7.3</li>
+      <li>Chrome Browser localhost for testing frontend web design</li>
+      <li>VsCode for frontend coding.</li>
+   </ol>
+   
+</ul>
 
-   _> Database:-
-       -> MySQL (Relational database),
-       -> MySQL workbench to manipulate database Shema.
 
-   _> Frontend Part :-
-       -> Angular 21.7.3
-       -> Chrome Browser localhost for testing frontend web design
-       -> VsCode for frontend coding. 
-
-       <br>
-       Documentation is comming soon..
