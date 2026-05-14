@@ -22,18 +22,18 @@ public class QuestionController {
     private QuizService quizService;
 
     //add question
-    @PostMapping("/")
-    public ResponseEntity<Question> add(@RequestBody Question question){
-        System.out.println(question);
-        System.out.println("adding question successful");
-        return ResponseEntity.ok(this.service.addQuestion(question));
-    }
+//    @PostMapping("/")
+//    public ResponseEntity<Question> add(@RequestBody Question question){
+//        System.out.println(question);
+//        System.out.println("adding question successful");
+//        return ResponseEntity.ok(this.service.addQuestion(question));
+//    }
 
     //update the question
-    @PutMapping("/")
-    public ResponseEntity<Question> update(@RequestBody Question question){
-        return ResponseEntity.ok(this.service.updateQuestion(question));
-    }
+//    @PutMapping("/")
+//    public ResponseEntity<Question> update(@RequestBody Question question){
+//        return ResponseEntity.ok(this.service.updateQuestion(question));
+//    }
 
     //get all question af any quiz
     @GetMapping("/quiz/{qid}")
@@ -109,5 +109,19 @@ public class QuestionController {
 
         Map<String,Object> map = Map.of("marksGot", marksGot,"correctAns", correctAns,"attempted",attempted);
         return ResponseEntity.ok(map);
+    }
+
+    // Create array of questions
+    @PostMapping("/createQuestion")
+    public ResponseEntity<List<Question>> createQuestions(@RequestBody List<Question> questions) {
+        System.out.println("Adding " + questions.size() + " questions");
+        return ResponseEntity.ok(this.service.addQuestions(questions));
+    }
+
+    // Update a single question
+    @PutMapping("/updateQuestion")
+    public ResponseEntity<Question> updateQuestion(@RequestBody Question question) {
+        System.out.println("Updating question ID: " + question.getQuesId());
+        return ResponseEntity.ok(this.service.updateQuestion(question));
     }
 }

@@ -3,13 +3,14 @@ package com.exam.service;
 import com.exam.entity.exam.Question;
 import com.exam.entity.exam.Quiz;
 
+import java.util.List;
 import java.util.Set;
 
 public interface QuestionService  {
 
-    public Question addQuestion(Question question);
+//    public Question addQuestion(Question question);
 
-    public Question updateQuestion(Question question);
+//    public Question updateQuestion(Question question);
 
     public Set<Question> getQuestions();
 
@@ -20,4 +21,10 @@ public interface QuestionService  {
     public void deleteQuestion(Long qid);
 
     public Question get(Long questionId);
+
+    // Save an array (List) of questions
+    public List<Question> addQuestions(List<Question> questions);
+
+    // Update a single question
+    public Question updateQuestion(Question question);
 }
